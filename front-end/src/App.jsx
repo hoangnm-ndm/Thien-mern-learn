@@ -1,15 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import ClientHeader from "./components/layouts/client/ClientHeader";
+import ClientFooter from "./components/layouts/client/ClientFooter";
+import Button from "./components/common/Button";
+import ProductItem from "./features/product/ProductItem";
+import ProductList from "./features/product/ProductList";
 
-function App() {
-  // logic?
+const App = () => {
   return (
-    <React.Fragment>
-      <p>Noi dung trang home</p>
-    </React.Fragment>
+    <div>
+      <ClientHeader />
+      <main>
+        <h1>Xin chao</h1>
+        <Button color="red" size="medium">
+          Register
+        </Button>
+        <Button color="blue" size="big">
+          Login
+        </Button>
+        <Button size="small">Cancel</Button>
+        <ProductList />
+      </main>
+      <ClientFooter />
+    </div>
   );
-}
+};
 
 export default App;

@@ -8,9 +8,3 @@ createRoot(document.getElementById("root")).render(
     <App />
   </StrictMode>,
 );
-
-const root = document.getElementById("root");
-const virtualELement = createRoot(root);
-virtualELement.render(<h1>Hello</h1>);
-
-// * Virtual DOM
